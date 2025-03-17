@@ -1,0 +1,40 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Instruksi Eksperimen
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<h4><b>2. Contoh Sebuah Ronde</b></h4>
+
+    Anda akan menghadapi layar sebagai berikut di sebuah ronde yang terkait dengan aktivitas kognitif. Jawaban dalam bentuk desimal cukup dibulatkan ke atas dalam dua angka setelah koma. 
+    Anda harus menekan tombol <b>‘Kirimkan’</b> untuk dapat masuk ke soal berikutnya.
+<br>
+<br>
+    <img src="{{ static 'images/math.png' }}" width="80%" />
+<br>
+<br>
+    Anda akan menghadapi layar sebagai berikut di sebuah ronde yang terkait dengan aktivitas penguraian kode.
+    Anda harus menekan tombol <b>‘Kirimkan’</b> untuk dapat masuk ke soal berikutnya.
+<br>
+<br>
+    <img src="/static/images/decoding.png" width="80%" />
+<br>
+<br>
+    Setelah menyelesaikan seluruh soal dalam satu ronde, maka rangkuman aktivitas Anda dalam ronde tersebut akan diinformasikan di halaman berikutnya.
+<br>
+<br>
+    <img src="{{ static 'images/result.png' }}" width="40%"/>
+<br>
+<br>
+<br>Tekan tombol 'Lanjut' jika Anda sudah memahami instruksi di atas.</br>
+<br>
+<br>
+    <button id="Lanjut"  class="otree-btn-next btn btn-primary next-button otree-next-button">Lanjut</button>
+
+
+
+{% endblock %}
